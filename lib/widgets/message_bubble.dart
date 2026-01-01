@@ -81,6 +81,7 @@ class MessageBubble extends StatelessWidget {
                       child: TappableText(
                         text: message.content,
                         onWordTap: onWordLongPress,
+                        maxLines: 10,
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: textColor,
                         ),
